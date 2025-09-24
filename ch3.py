@@ -96,7 +96,7 @@ math_scores = np.array(df['mathematics'])
 
 fig = plt.figure(figsize=(8, 8))
 ax = fig.add_subplot(111)
-#산점도
+# 산점도
 ax.scatter(english_scores, math_scores)
 ax.set_xlabel('english')
 ax.set_ylabel('mathemtaics')
@@ -148,7 +148,7 @@ plt.show()
 # In[29]:
 
 
-#npy 형ㅇ식으로 저장된 NumPy array를 읽어들인다
+#npy 형식으로 저장된 NumPy array를 읽어들인다
 anscombe_data = np.load('C:\\Users\\연승혁\\data\\ch3\\ch3_anscombe.npy')
 print(anscombe_data.shape)
 anscombe_data[0]
@@ -187,18 +187,19 @@ for i, data in enumerate(anscombe_data):
     ax = axes[i//2, i%2]
     ax.set_xlim([4, 20])
     ax.set_ylim([3, 13])
-    # 타리틀을 부여
+    # 타이틀을 부여
     ax.set_title(f'data{i+1}')
     ax.scatter(data[:,0], data[:,1])
     ax.plot(xs, ys, color='gray')
 
- #그래프 사이의 간격을 좁힘
+ # 그래프 사이의 간격을 좁힘
 plt.tight_layout()
 plt.show()
     
 
 
 # In[ ]:
+
 
 
 
